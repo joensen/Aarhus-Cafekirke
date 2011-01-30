@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+#wpodcast_c {
+	margin-left: 50%;
+	width: 500px;
+	left: -250px;
+	top: 100px;
+}
+#wpodcast div.bd {
+	background: #F2F2F2 url("../img/ipod.png") no-repeat;
+	background-position: bottom right;
+}
+#wkalender_c {
+	margin-left: 50%;
+	width: 620px;
+	left: -310px;
+	top: 100px;
+}
+#winformation_c {
+	margin-left: 50%;
+	width: 580px;
+	left: -290px;
+	top: 100px;
+}
+#wnyhedsbrev_c {
+	margin-left: 50%;
+	width: 510px;
+	left: -255px;
+	top: 100px;
+}
+#windgang_c {
+	margin-left: 50%;
+	left: -292px;
+	top: 60px;
+	width: 584px;
+}

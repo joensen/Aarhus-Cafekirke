@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+
+	<application>
+		<locale-config>
+			<default-locale>en</default-locale>
+			<supported-locale>da</supported-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+	</application>
+
+	<application>
+		<resource-bundle>
+			<base-name>localization.messages</base-name>
+			<var>msgs</var>
+		</resource-bundle>
+	</application>
+
+	<managed-bean>
+		<managed-bean-name>newsletter</managed-bean-name>
+		<managed-bean-class>newsletter.Form</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>lang</managed-bean-name>
+		<managed-bean-class>localization.Lang</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>podcast</managed-bean-name>
+		<managed-bean-class>podcast.Podcast</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>langMenu</managed-bean-name>
+		<managed-bean-class>newsletter.Menu</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>frontMenu</managed-bean-name>
+		<managed-bean-class>menu.Menu</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>news</managed-bean-name>
+		<managed-bean-class>newsletter.News</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<navigation-rule>
+		<display-name>front</display-name>
+		<from-view-id>/front.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>reset</from-outcome>
+			<to-view-id>/front.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

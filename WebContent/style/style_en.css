@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("reset.css");
+@import url("content.css");
+
+body {
+	color: #636363;
+	background: #ebebeb url("../img/bg_x.png") repeat-x;
+}
+#menu {
+	background: url("../img/front_logo.png") no-repeat;
+	position: absolute;
+	top: 0px;
+	left: -240px;
+	margin-left: 50%;
+	height: 627px;
+	width: 480px;
+}
+#mlist li {
+	display: block;
+	list-style: none;
+	float: left;
+	padding: 0;
+	margin: 7px;
+	left: 0px;
+}
+#mlist li a{
+	display: block;
+	width: 226px;
+	height: 169px;
+}
+
+#mkalender, #mpodcast, #minformation, #mnyhedsbrev {
+	background: url("../img/front_text_en.png") no-repeat;
+}
+#mkalender { background-position: 47px 73px; }
+#mpodcast {	background-position: -192px 73px; }
+#minformation { background-position: 47px -111px; }
+#mnyhedsbrev { background-position: -192px -111px;}
+
+#mkalender:hover, #mpodcast:hover, #minformation:hover, #mnyhedsbrev:hover {
+	background: url("../img/front_text_en_h.png") no-repeat;
+}
+#mkalender:hover { background-position: 47px 73px; }
+#mpodcast:hover { background-position: -192px 73px; }
+#minformation:hover { background-position: 47px -111px; }
+#mnyhedsbrev:hover { background-position: -192px -111px; }
+
+#wkalender, #wnyhedsbrev, #wpodcast, #winformation, #windgang { display: none; }
+
+.errors {
+	color: red;
+}
+
+.success {
+	color: green;
+}

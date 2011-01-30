@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12673707739780" configfile="/aarhuscafekirke/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="front" x="262" y="161" id="pf12689277483860" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf12689277483871" inlinks="pf12689277483871" path="/front.jsp"/>
+  <links id="pf12689277483871" target="pf12689277483860" source="pf12689277483860" outcome="reset" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>
